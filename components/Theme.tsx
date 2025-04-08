@@ -1,12 +1,8 @@
 "use client";
 
 import { useThemeStore } from "@/store/theme-store";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
-
-type Theme = "light" | "dark";
-
-
 
 export default function ThemeSwitch() {
     const { theme, toggleTheme,setTheme } = useThemeStore();

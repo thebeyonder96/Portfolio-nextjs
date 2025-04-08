@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   },
   allowedDevOrigins: ['http://10.81.234.158:3000'],
   experimental: {
-    
+    // serverComponentsExternalPackages: ['@react-email/render', '@react-email/tailwind']
   }
 };
 

@@ -8,9 +8,16 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "engines": {
+    "npm": ">=8.6.0",
+    "node": ">=18.0.0"
+  },
+  "overrides": {
+    "@react-email/render": "0.0.9"
+  },
   "dependencies": {
     "@react-email/components": "^0.0.36",
-    "@react-email/render": "^1.0.6",
+    "@react-email/render": "0.0.9",
     "@react-email/tailwind": "^1.0.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.6.3",

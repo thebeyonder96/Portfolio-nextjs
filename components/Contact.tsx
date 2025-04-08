@@ -34,7 +34,7 @@ const Contact = () => {
         or through this form.
       </p>
       <form action={async (formdata)=>{
-        const {data,error} = await sendMail(formdata)
+        const {error} = await sendMail(formdata)
         if(error){
           toast.error(error)
         }
