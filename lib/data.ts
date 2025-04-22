@@ -40,7 +40,7 @@ export const experiencesData = [
     description:
       "Currently working as a Full Stack Web Developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2014 - Present",
+    date: "2024 - Present",
   },
   {
     title: "Back-End Developer",
