@@ -12,7 +12,7 @@ import { useSectionInView } from '@/lib/hooks'
 const Intro = () => {
     const {ref} = useSectionInView("Home")
     const count = useMotionValue(0);
-  const rounded = useTransform(count, (latest) => Math.round(latest));
+//   const rounded = useTransform(count, (latest) => Math.round(latest));
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Intro = () => {
     });
 
     return () => controls.stop();
-  }, []);
+  }, [count]);
 
     return (
         <section id='home' ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'>
