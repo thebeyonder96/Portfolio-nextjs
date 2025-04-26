@@ -36,7 +36,8 @@ export const links = [
 export const experiencesData = [
   {
     title: "Software Developer",
-    location: "Bangalore",
+    company: "EAZY ERP",
+    link: "https://www.eazyerp.com/",
     description:
       "Currently working as a Full Stack Web Developer.",
     icon: React.createElement(LuGraduationCap),
@@ -44,7 +45,8 @@ export const experiencesData = [
   },
   {
     title: "Back-End Developer",
-    location: "Erode, Tamil Nadu",
+    company: "MOBITECH - Irrigation Automation",
+    link: "https://mobitechwireless.in/",
     description:
       "I worked as a back-end developer for 1 years. Learned more about IoT and also upskilled to the full stack.",
     icon: React.createElement(CgWorkAlt),
@@ -52,7 +54,8 @@ export const experiencesData = [
   },
   {
     title: "Software Developer",
-    location: "Calicut, Kerala",
+    company: "LEVELX",
+    link:"https://levelx.in/",
     description:
       "I worked as a Software Developer Intern, my stack includes Angular, TypeScript, Tailwind, Express and MongoDB.",
     icon: React.createElement(FaReact),
