@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import ThemeSwitch from "@/components/Theme";
 
 export const metadata: Metadata = {
-  title: "Akshay | Portfolio",
+  title: "<Akshay /> | Web Dev",
   description: "Akshay's portfolio featuring my skills and experience",
 };
 

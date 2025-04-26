@@ -1,8 +1,8 @@
 "use client"
 
 import Image from 'next/image'
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react'
+import { animate, motion, useMotionValue, useTransform } from 'framer-motion'
 import Link from 'next/link'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
@@ -11,6 +11,19 @@ import { useSectionInView } from '@/lib/hooks'
 
 const Intro = () => {
     const {ref} = useSectionInView("Home")
+    const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const controls = animate(count, 2, {
+      duration: 2,
+      delay: 1,
+      onUpdate: (latest) => setCurrent(Math.round(latest)),
+    });
+
+    return () => controls.stop();
+  }, []);
 
     return (
         <section id='home' ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'>
@@ -41,7 +54,7 @@ const Intro = () => {
             >
                 <span className="font-bold">Hello, I&apos;m Akshay Kumar.</span> I&apos;m a{" "}
                 <span className="font-bold text-shadow-2xs">full-stack developer</span> with{" "}
-                <span className="font-bold">2 years</span> of experience. I enjoy
+                <span className="font-bold">{current} years</span> of experience. I enjoy
                 building <span className="italic">web apps</span>. My focus is{" "}
                 <span className="underline">Next.js</span>  and <span className="underline">Node.js</span>
             </motion.h1>
