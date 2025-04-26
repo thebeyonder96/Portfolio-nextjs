@@ -18,7 +18,7 @@ const Intro = () => {
   useEffect(() => {
     const controls = animate(count, 2, {
       duration: 2,
-      delay: 1,
+      delay: 0.5,
       onUpdate: (latest) => setCurrent(Math.round(latest)),
     });
 

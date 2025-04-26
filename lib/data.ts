@@ -45,7 +45,7 @@ export const experiencesData = [
   },
   {
     title: "Back-End Developer",
-    company: "MOBITECH - Irrigation Automation",
+    company: "MOBITECH",
     link: "https://mobitechwireless.in/",
     description:
       "I worked as a back-end developer for 1 years. Learned more about IoT and also upskilled to the full stack.",
